@@ -1,10 +1,18 @@
 GoIT RDB HW-05 - Nested requests (subqueries) in SQL
 ========================================
 
-Task 1: Create LibraryManagement database and tables with relationships
+Task 1: order_details query with nested customer_id subquery
 -----------------------------------------------------------------------
-
-Task 2: Insert sample data into tables
----------------------------------------
+SELECT
+    od.id AS order_detail_id,
+    od.order_id,
+    od.product_id,
+    od.quantity,
+    (
+        SELECT o.customer_id
+        FROM orders o
+        WHERE o.id = od.order_id
+    ) AS customer_id
+FROM order_details od;
 
 
