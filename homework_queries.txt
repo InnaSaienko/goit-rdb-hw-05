@@ -1,0 +1,10 @@
+GoIT RDB HW-05 - Nested requests (subqueries) in SQL
+========================================
+
+Task 1: Create LibraryManagement database and tables with relationships
+-----------------------------------------------------------------------
+
+Task 2: Insert sample data into tables
+---------------------------------------
+
+
